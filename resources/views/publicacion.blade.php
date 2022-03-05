@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Generic - Phantom by HTML5 UP</title>
+		<title>{{$publicacion->titulo}}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="/assets/css/main.css" />
@@ -22,7 +22,7 @@
 
 							<!-- Logo -->
 								<a href="/" class="logo">
-									<span class="symbol"><img src="/images/logo.svg" alt="" /></span><span class="title">Phantom</span>
+									<span class="symbol"><img src="logo.svg" alt="" /></span><span class="title">Regresar</span>
 								</a>
 
 							<!-- Nav -->
@@ -39,11 +39,11 @@
 					<nav id="menu">
 						<h2>Menu</h2>
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="generic.html">Ipsum veroeros</a></li>
-							<li><a href="generic.html">Tempus etiam</a></li>
-							<li><a href="generic.html">Consequat dolor</a></li>
-							<li><a href="elements.html">Elements</a></li>
+							<li><a href="/">INICIO</a></li>
+							<li>Integrantes</li>
+							<li>Dania Yanin Chavez Zavala</li>
+							<li>Brandon Duran Rocha</li>
+							<li>Christian Jahir Garcia Jardinez</li>
 						</ul>
 					</nav>
 
@@ -51,6 +51,7 @@
 					<div id="main">
 						<div class="inner">
 							<h1>{{$publicacion->titulo}}</h1>
+							<p>Unidad: {{$publicacion->unidad}}</p>
 							<span class="image main"><img src={{$publicacion->link_imagen}} alt="" /></span>
 							<p>{{$publicacion->introduccion}}</p>
 							<p>{{$publicacion->contenido}}.</p>
@@ -58,42 +59,19 @@
 					</div>
 
 				<!-- Footer -->
-					<footer id="footer">
+				<footer id="footer">
 						<div class="inner">
-							<section>
-								<h2>Get in touch</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="field">
-											<textarea name="message" id="message" placeholder="Message"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send" class="primary" /></li>
-									</ul>
-								</form>
-							</section>
 							<section>
 								<h2>Follow</h2>
 								<ul class="icons">
-									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://twitter.com/UPTecamac" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.facebook.com/UniversidadPolitecnicadeTecamac" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="https://instagram.com/uptecamac?utm_medium=copy_link" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/BrandonD96/examen2" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 							</section>
 							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; UPT. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
 					</footer>
