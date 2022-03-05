@@ -31,6 +31,12 @@ class PublicacionController extends Controller
     //mostrar
     public function mostrarPublicacion($slug){
         $publicacion=Publicacion::where('slug',$slug)->firstorFail();
-        return view('generic',['publicacion'=>$publicacion]);
+        return view('publicacion',['publicacion'=>$publicacion]);
     }
+
+    //test
+    public function mostrarTodo(){
+       $publicaciones=Publicacion::all();
+       return view('index',['publicaciones'=>$publicaciones]);
+    }    
 }

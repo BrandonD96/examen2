@@ -15,8 +15,9 @@ use App\Http\Controllers\PublicacionController;
 */
 
 Route::post('/crearPublicacion',[PublicacionController::class,'crearPublicacion'])->name('crear.publicacion');
-Route::get('/{slug}',[PublicacionController::class,'mostrarPublicacion'])->name('mostrar.publicacion');
+Route::get('publicaciones/{slug}',[PublicacionController::class,'mostrarPublicacion'])->name('mostrar.publicacion');
 Route::post('/eliminarPublicacion',[PublicacionController::class,'eliminarPublicacion'])->name('eliminar.publicacion');
-Route::get('/', function () {return view('index');})->name('Inicio');
+//Route::get('/', function () {return view('index');})->name('Inicio');
+Route::get('',[PublicacionController::class,'mostrarTodo'])->name('mostrarTodas.publicacion');
 
 
