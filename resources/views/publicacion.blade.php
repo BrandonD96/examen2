@@ -22,7 +22,7 @@
 
 							<!-- Logo -->
 								<a href="/" class="logo">
-									<span class="symbol"><img src="logo.svg" alt="" /></span><span class="title">Regresar</span>
+									<span class="symbol"><img src="/images/logo1.svg" alt="" /></span><span class="title">Regresar</span>
 								</a>
 
 							<!-- Nav -->
